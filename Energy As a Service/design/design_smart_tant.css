@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* background-color: antiquewhite; */
+}
+
+#External {
+  /* border: 1px solid red; */
+  height: 559px;
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "nav nav nav nav"
+    "side_nav side_nav volume height";
+  gap: 10px;
+  padding: 0px;
+}
+
+#LogoandNavigation_div {
+  /* border: 2px solid red; */
+  /* background-color: white; */
+  grid-area: nav;
+  background-color: #014260;
+  height: 210px;
+  width: 100%;
+  position: sticky;
+  top: 0px;
+  display: flex;
+  border-radius: 10px;
+}
+
+#Logo {
+  /* border: 1px solid red; */
+  height: 200px;
+  width: 600px;
+  margin-left: 85px;
+  margin-top: 15px;
+  display: flex;
+}
+
+.Logo_Image {
+  height: 150px;
+}
+
+.caption {
+  margin-top: 130px;
+  margin-left: -100px;
+  font-size: 25px;
+  /* font-family: "Courier New", Courier, monospace; */
+  font-family: Lucida Handwriting;
+  color: white;
+}
+
+#Nav {
+  /* border: 1px solid gray; */
+  height: 55px;
+  width: 650px;
+  margin-left: -190px;
+  margin-top: 120px;
+}
+
+#Nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /* background-color: white; */
+}
+
+#Nav li {
+  float: left;
+}
+
+#Nav li a {
+  font-size: 19px;
+  display: block;
+  color: black;
+  /* background-color: #3324; */
+  background-color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+#Nav li a:hover {
+  background-color: grey;
+}
+
+#Nav .eas {
+  background-color: grey;
+}
+
+#Nav a:active {
+  background-color: grey;
+}
+
+#Side_Menu {
+  grid-area: side_nav;
+}
+
+#Side_Menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 350px;
+  min-height: 400px;
+  background-color: #e7f5f4;
+  margin-top: -1px;
+  border-radius: 10px;
+}
+
+#Side_Menu_list li a {
+  display: block;
+  color: #000;
+  padding: 20px 110px;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 7px;
+}
+
+#Side_Menu_list li a:hover {
+  background-color: green;
+}
+
+/* #Side_Menu_list li a.active {
+  background-color: #04aa6d;
+  color: white;
+} */
+
+.tank_data {
+  background-color: green;
+}
+
+#Side_Menu li a:active {
+  background-color: rgb(84, 143, 84);
+}
+
+/* #Side_Menu_list li a:visited {
+  background-color: black;
+} */
+
+/* #Side_Menu_list a:link {
+  background-color: yellow;
+} */
+
+.tank_volume {
+  grid-area: volume;
+}
+
+.tank_height {
+  grid-area: height;
+}
+
+.chart_container {
+  display: grid;
+  grid-template-areas:
+    "temperature power"
+    "energy .";
+  gap: 10px;
+  padding: 10px;
+}
+
+.temperature_chart {
+  grid-area: temperature;
+}
+
+.power_consumption_chart {
+  grid-area: power;
+}
+
+.energy_consumption_chart {
+  grid-area: energy;
+}
+
+/* .device_location {
+  grid-area: location;
+  width: 700px;
+  height: 300px;
+} */

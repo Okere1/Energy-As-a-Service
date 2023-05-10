@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Smart Tank</title>
+    <link rel="stylesheet" href="../design/design_smart_tant.css" />
+  </head>
+
+  <body>
+    <div id="preloader"></div>
+
+    <!-- Start - External Div -->
+    <div id="External">
+      <!-- Start - LogoandNavigation Div -->
+      <div id="LogoandNavigation_div">
+        <!-- Start - Logo Div -->
+        <div class="Logo" id="Logo">
+          <img
+            class="Logo_Image"
+            id="Logo_Image"
+            src="../image/ISW Logo.jpg"
+            alt="Interswitch Logo"
+          />
+          <p class="caption">Power Initiative</p>
+        </div>
+        <!-- End - Logo Div -->
+
+        <!-- Start - Navigation Div -->
+        <div id="Nav">
+          <ul id="Menu_list">
+            <li><a href="../eas/eas.html" class="eas">EAS</a></li>
+            <li>
+              <a href="./Smart_Tank.html" class="smart_tank">Smart Tank</a>
+            </li>
+            <li><a href="#Report" class="report">Report</a></li>
+            <li><a href="#Account" class="account">Account</a></li>
+            <li><a href="#Help" class="help">Help</a></li>
+            <li><a href="#Contact" class="contact">Contact</a></li>
+          </ul>
+        </div>
+        <!-- End - Navigation Div -->
+      </div>
+      <!-- End - LogoandNavigation Div -->
+
+      <!-- Start - First Content Div -->
+      <div id="Side_Menu">
+        <ul id="Side_Menu_list">
+          <li><a href="./Smart_Tank.html" class="tank_data">Tank Data</a></li>
+          <li>
+            <a href="./chart_smart_tank.html" target="_self" class="charts_tank"
+              >Charts</a
+            >
+          </li>
+          <li>
+            <a href="./location_smart_tank.html" class="location">Location</a>
+          </li>
+          <li>
+            <a href="./level_guage_smart_tank.html" class="level_guage"
+              >Level Guage</a
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- End - First Content Div -->
+      <div class="chart_container">
+        <div class="temperature_chart">
+          <iframe
+            width="450"
+            height="260"
+            style="border: 1px solid #cccccc"
+            src="https://thingspeak.com/channels/1945060/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"
+          ></iframe>
+        </div>
+        <div class="power_consumption_chart">
+          <iframe
+            width="450"
+            height="260"
+            style="border: 1px solid #cccccc"
+            src="https://thingspeak.com/channels/1945060/charts/4?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"
+          ></iframe>
+        </div>
+        <div class="energy_consumption_chart">
+          <iframe
+            width="450"
+            height="260"
+            style="border: 1px solid #cccccc"
+            src="https://thingspeak.com/channels/1945060/charts/5?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <!-- End - External Div -->
+
+    <script src="../app.js">
+      // var loader = document.getElementById("preloader");
+      // window.addEventListener("load", function () {
+      //   loader.style.display = "none";
+      // });
+    </script>
+  </body>
+</html>

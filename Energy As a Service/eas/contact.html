@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>eas</title>
+    <link rel="stylesheet" href="../design/design_eas.css" />
+  </head>
+  <script defer src="../app.js"></script>
+  <body>
+    <div id="preloader"></div>
+
+    <!-- Start - External Div -->
+    <div id="External">
+      <!-- Start - LogoandNavigation Div -->
+      <div id="LogoandNavigation_div">
+        <!-- Start - Logo Div -->
+        <div class="Logo" id="Logo">
+          <img
+            class="Logo_Image"
+            id="Logo_Image"
+            src="../image/ISW Logo.jpg"
+            alt="Interswitch Logo"
+          />
+          <p class="caption">Power Initiative</p>
+        </div>
+        <!-- End - Logo Div -->
+
+        <!-- Start - Navigation Div -->
+        <nav>
+          <div class="Nav" id="Nav">
+            <ul id="Menu_list">
+              <li><a href="./index.html" class="eas">EAS</a></li>
+              <li>
+                <a href="../smart_tank/Smart_Tank.html" class="smart_tank"
+                  >Smart Tank</a
+                >
+              </li>
+              <li><a href="./report.html" class="report">Report</a></li>
+              <li><a href="./account.html" class="account">Account</a></li>
+              <li><a href="./help.html" class="help">Help</a></li>
+              <li><a href="./contact.html" class="contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <!-- End - Navigation Div -->
+      </div>
+      <!-- End - LogoandNavigation Div -->
+
+      <!-- Start - First Content Div -->
+      <nav>
+        <div class="Side_Menu" id="Side_Menu">
+          <ul id="Side_Menu_list">
+            <li><a href="./index.html" class="billing">Billing</a></li>
+            <li>
+              <a href="./control_eas.html" target="_self" class="charts"
+                >Control</a
+              >
+            </li>
+            <li>
+              <a href="./failsafe_eas.html" class="fail_safe"
+                >FailSafe Status</a
+              >
+            </li>
+            <li>
+              <a href="./charts_eas.html" target="_self" class="charts"
+                >Charts</a
+              >
+            </li>
+            <li>
+              <a href="./guage_eas.html" class="fail_safe">Energy Guage</a>
+            </li>
+            <li>
+              <a href="./location.html" class="location">Location</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- End - First Content Div -->
+
+      <div class="Energy_Cunsumed">
+        <iframe
+          width="450"
+          height="260"
+          style="border: 1px solid #cccccc"
+          src="https://thingspeak.com/channels/1986068/widgets/630209"
+        ></iframe>
+      </div>
+      <div class="Energy_Billing">
+        <iframe
+          width="450"
+          height="260"
+          style="border: 1px solid #cccccc"
+          src="https://thingspeak.com/channels/1986068/widgets/630208"
+        ></iframe>
+      </div>
+    </div>
+    <!-- End - External Div -->
+  </body>
+</html>

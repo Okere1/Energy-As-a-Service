@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* background-color: antiquewhite; */
+}
+
+#External {
+  /* border: 1px solid red; */
+  height: 559px;
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "nav nav nav nav"
+    "side_nav side_nav consumed billing";
+  gap: 10px;
+  padding: 0px;
+}
+
+#LogoandNavigation_div {
+  /* border: 2px solid red; */
+  /* background-color: white; */
+  grid-area: nav;
+  background-color: #014260;
+  height: 210px;
+  width: 100%;
+  position: sticky;
+  top: 0px;
+  display: flex;
+  border-radius: 10px;
+}
+
+#Logo {
+  /* border: 1px solid red; */
+  height: 200px;
+  width: 600px;
+  margin-left: 85px;
+  margin-top: 15px;
+  display: flex;
+}
+
+.Logo_Image {
+  height: 150px;
+}
+
+.caption {
+  margin-top: 130px;
+  margin-left: -100px;
+  font-size: 25px;
+  /* font-family: "Courier New", Courier, monospace; */
+  font-family: Lucida Handwriting;
+  color: white;
+}
+
+#Nav {
+  /* border: 1px solid gray; */
+  height: 55px;
+  width: 650px;
+  margin-left: -190px;
+  margin-top: 120px;
+}
+
+#Nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /* background-color: white; */
+}
+
+#Nav li {
+  float: left;
+}
+
+/* #Nav li a {
+  font-size: 19px;
+  display: block;
+  color: black;
+  background-color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-radius: 20px;
+} */
+
+#Nav li a:is(:link, :active, :visited) {
+  font-size: 19px;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  border-radius: 20px;
+  color: black;
+  text-decoration: none;
+  /* padding: 0.5rem 1.5rem; */
+  background-color: white;
+}
+
+#Nav a:is(:link, :active, :visited).active {
+  color: black;
+  background-color: grey;
+}
+
+#Nav li a:hover {
+  background-color: grey;
+}
+
+/* #Nav li a:visited {
+  background-color: grey;
+} */
+/* #Nav li a:link {
+  background-color: grey;
+} */
+
+/* 
+#nav li {
+  margin: 30px;
+  display: inline;
+} */
+
+/* #Nav a:active {
+  background-color: grey;
+} */
+
+/* #Nav .eas {
+  background-color: grey;
+} */
+
+#Side_Menu {
+  grid-area: side_nav;
+}
+
+#Side_Menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 350px;
+  min-height: 400px;
+  background-color: #e7f5f4;
+  margin-top: -1px;
+  border-radius: 10px;
+}
+
+#Side_Menu_list li a {
+  display: block;
+  color: #000;
+  padding: 20px 110px;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 7px;
+}
+
+#Side_Menu li a:is(:link, :active, :visited) {
+  font-size: 20px;
+  display: block;
+  text-align: center;
+  padding: 20px 110px;
+  border-radius: 10px;
+  color: black;
+  text-decoration: none;
+}
+#Side_Menu a:is(:link, :active, :visited).active {
+  color: black;
+  background-color: green;
+}
+
+#Side_Menu_list li a:hover {
+  background-color: green;
+}
+
+/* #Side_Menu_list li a.active {
+  background-color: #04aa6d;
+  color: white;
+} */
+
+/* .billing {
+  background-color: green;
+}
+
+#Side_Menu li a:active {
+  background-color: rgb(84, 143, 84);
+} */
+
+/* #Side_Menu_list li a:visited {
+  background-color: black;
+} */
+
+/* #Side_Menu_list a:link {
+  background-color: yellow;
+} */
+
+.Energy_Consumed {
+  grid-area: consumed;
+}
+
+.Energy_Billing {
+  grid-area: billing;
+}
+
+.chart_container {
+  display: grid;
+  grid-template-areas:
+    "e_consumed p_chart"
+    "v_chart c_chart"
+    "f_chart failsafe_chart"
+    "total_energy_chart total_energy_billing_chart";
+  gap: 10px;
+  padding: 10px;
+}
+
+.Energy_Cunsumed_Chart {
+  grid-area: e_consumed;
+}
+
+.Power_Chart {
+  grid-area: p_chart;
+}
+
+.voltage {
+  grid-area: v_chart;
+}
+
+.current {
+  grid-area: c_chart;
+}
+
+.frequency {
+  grid-area: f_chart;
+}
+
+.failsafe_chart {
+  grid-area: failsafe_chart;
+}
+
+.total_energy_chart {
+  grid-area: total_energy_chart;
+}
+
+.total_energy_billing {
+  grid-area: total_energy_billing_chart;
+}
+
+.control_Button {
+  display: block;
+  color: #000;
+  padding: 20px 70px;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 15px;
+  background-color: #014260;
+}
+
+/* .conrol_Div {
+  display: block;
+  color: #000;
+  padding: 20px 70px;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 15px;
+  background-color: #014260;
+} */
+
+p {
+  font-weight: 700;
+  color: #014260;
+  text-align: center;
+}
